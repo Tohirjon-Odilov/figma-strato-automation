@@ -5,11 +5,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="scss/style.css">
     <title>Strato Automation</title>
+    <script>
+        function $scroll() {
+            if (scrollY !== 0) {
+                document.getElementById('nav').style.boxShadow = "0px 6px 16px 1px rgba(0, 0, 0, 0.49)"
+                document.getElementById('nav').style.transition = "all 0.3s"
+                document.getElementById('nav').style.marginTop = "-42px"
+            } else if (screenY == 0) {
+                document.getElementById('nav').style.boxShadow = "none"
+                document.getElementById('nav').style.transition = "all 0.5s"
+                document.getElementById('nav').style.marginTop = "0px"
+            }
+            console.log(scrollY);
+        }
+    </script>
 </head>
 
-<body>
+<body onscroll="$scroll()">
+    <header>
+        <ul class="center flex">
+            <li>Collaborations</li>
+            <li>Documentation</li>
+            <li>Contact</li>
+        </ul>
+        <ul class="right flex">
+            <li>En</li>
+            <li>Fr</li>
+        </ul>
+    </header>
+    <hr>
+    <nav id="nav">
+        <div class="navbar">
+            <div class="navbar_container">
+                <a href="#" id="navbar_logo" class="navbar_links"> <img src="img/logo.png" alt=""> </a>
+                <div class="navbar_toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar_menu">
+                    <li class="navbar_item">
+                        <a href="#home" class="point navbar_links">Solutions</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="#" class="point navbar_links">Products</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="#" class="point navbar_links">About us</a>
+                    </li>
+                    <li class="navbar_btn">
+                        <button class="point" id="button">Partners Resources</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+
+    <main>
+
+        <!-- Section 1 -->
+
+        <section class="s1">
+            <div class="flex-sb s1_container">
+                <div class="part_1">
+                    <p>Efficient and Data-Driven <br> Building Automation</p>
+                </div>
+                <div class="part_2">
+                    <img src="img/Rectangle.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1 -->
+
+        <section class="s1">
+            <div class="flex-sb s1_container">
+                <div class="part_1">
+                </div>
+                <div class="part_1"></div>
+            </div>
+        </section>
+    </main>
+
 
 
     <script src="js/script.js"></script>
