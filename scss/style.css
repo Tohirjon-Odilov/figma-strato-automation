@@ -331,7 +331,7 @@ main {
 }
 
 .s1 .s1_container .part_2 {
-  width: 50%;
+  max-width: 700px;
 }
 
 .s1 .s1_container .part_2 img {
@@ -356,7 +356,7 @@ main {
 
 .s2_container .part_2 {
   max-width: 580px;
-  max-height: 315px;
+  min-height: 315px;
   border: 1px solid #252930;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -745,26 +745,34 @@ li {
   .s6,
   .s5,
   .s4,
-  .s3,
-  .s2 {
+  .s3 {
     display: none;
   }
   .s1 .part_1 p {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 35px;
+  }
+  .s2_container {
+    margin: 50px;
+  }
+  .s2_container .part_2 {
+    padding: 35px;
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 390px) {
   header {
     display: none;
+  }
+  main {
+    margin: 0 20px;
   }
   .flex {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .s1 {
-    margin: 90px 20px 0;
+    margin: 90px 0px 0;
   }
   .s1 .s1_container {
     -webkit-box-orient: vertical;
@@ -774,20 +782,26 @@ li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: -170px;
   }
   .s1 .s1_container .part_1 {
-    max-width: 900px;
+    width: 250px;
   }
   .s1 .s1_container .part_1 p {
     font-size: 20px;
     line-height: 25px;
   }
+  .s1 .s1_container .part_1 #ef {
+    width: 100%;
+  }
   .s1 .s1_container .part_2 {
     max-width: 576px;
   }
-  .s1 .s1_container .part_2 img {
-    width: 476px;
+  .s2_container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .s2_container .part_1 img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
