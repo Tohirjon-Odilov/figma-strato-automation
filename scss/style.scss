@@ -399,7 +399,7 @@ li {
 .s4 {
     .part_1 {
         width: 30%;
-        height: 335px;
+        min-height: 335px;
         margin: 30px 0px;
         h1 {
             color: #252930;
@@ -424,7 +424,7 @@ li {
     .part_2 {
         justify-content: space-around;
         width: 70%;
-        height: 335px;
+        min-height: 335px;
         background: #E8E9EA;
         padding: 78px 68px;
         ul li {
@@ -455,11 +455,11 @@ li {
 // section 5
 .s5 {
     .s5-container {
-        min-height: 820px;
+        max-height: 820px;
         padding: 128px 157px;
         .part_2 {
             max-width: 563px;
-            min-height: 290px;
+            height: 290px;
             border: #111 solid 1px;
             padding: 65px;
             p {
@@ -520,7 +520,6 @@ li {
         margin-top: 100px;
         .part_1 {
             width: 65%;
-            // border-bottom: #111 solid 1px;
             .flex {
                 .part-1 {
                     width: 50%;
@@ -629,24 +628,49 @@ li {
 }
 
 @media screen and (max-width:992px) {
-    .s8,
-    .s7,
-    .s6,
-    .s5,
-    .s4,
-    .s3 {
-        display: none;
-    }
+    //media 1
     .s1 .part_1 p {
         font-size: 30px;
         line-height: 35px;
     }
+    //media 2
     .s2_container {
         margin: 50px;
         .part_2 {
             padding: 35px;
         }
     }
+    // media 3
+    // media 4
+    .s4-container {
+        .part_1 {
+            margin-top: 70px;
+            h1 {
+                font-size: 25px;
+            }
+        }
+        .part_2 {
+            padding: 80px 40px;
+            min-height: 200px;
+        }
+    }
+    //media 5
+    .s5 .s5-container {
+        margin-top: 30px;
+        padding: 0px;
+    }
+    // media 6
+    .s6 {
+        margin: 40px 0 0 0;
+        .part_1 {
+            margin: 70px 40px;
+            h1 {
+                font-size: 25px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+    // media 7
 }
 
 @media screen and (max-width:390px) {
@@ -687,6 +711,103 @@ li {
         .part_1 {
             img {
                 width: 100%;
+            }
+        }
+        .part_2 {
+            margin-top: 40px;
+        }
+    }
+    // media 3
+    .s3_container {
+        .part_2 {
+            margin-top: 40px;
+            flex-direction: column;
+            .card2,
+            .card3 {
+                width: 350px;
+            }
+        }
+    }
+    .br {
+        height: 400px;
+    }
+    //media 4
+    .s4-container {
+        flex-direction: column;
+        .part_1 {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            height: 250px;
+        }
+        .part_2 {
+            width: 350px;
+            padding: 40px 20px;
+            flex-direction: column;
+        }
+    }
+    // media 5
+    .s5-container .part_1 {
+        margin-bottom: 40px;
+        img {
+            width: 100%;
+        }
+    }
+    // media 6
+    .s6 {
+        .part_1 {
+            width: 100%;
+            text-align: center;
+            h1 {
+                font-size: 20px;
+            }
+        }
+        .part_2 {
+            width: 100%;
+        }
+    }
+    // media 7
+    .s7 .s7-container {
+        flex-direction: column;
+        margin-top: 50px;
+        .part_1 {
+            width: 350px;
+            .part-1,
+            .part-2 p a {
+                font-size: 13px;
+            }
+        }
+        .part_2 {
+            width: 350px;
+        }
+    }
+    .hr {
+        display: none;
+    }
+    // media 8
+    .s8 .s8-container {
+        flex-direction: column;
+        padding-top: 30px;
+        .part_1 {
+            flex-wrap: nowrap;
+            .box2 {
+                margin-left: 100px;
+            }
+        }
+        .part_2 {
+            .box1 {
+                display: flex;
+            }
+            .box2 {
+                margin-left: 0;
+                width: 350px;
+                .email {
+                    margin: 0;
+                    width: 350px;
+                }
+                #finish {
+                    display: none;
+                }
             }
         }
     }
