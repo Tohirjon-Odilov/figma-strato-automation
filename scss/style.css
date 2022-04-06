@@ -397,7 +397,7 @@ main {
   margin-top: 30px;
 }
 
-.s2_container .part_2 span #right {
+.s2_container .part_2 span .right {
   position: relative;
   top: -3px;
   left: 10px;
@@ -485,13 +485,139 @@ main {
   width: 100%;
 }
 
-.s4 table {
-  text-align: left;
+li {
+  list-style: none;
+}
+
+.s4 .part_1 {
+  width: 30%;
+  height: 335px;
+  margin: 30px 0px;
+}
+
+.s4 .part_1 h1 {
+  color: #252930;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.s4 .part_1 span {
+  font-size: 20px;
+  line-height: 23px;
+  color: #252930;
+  border-bottom: solid #FF5F00 3px;
+  padding-bottom: 20px;
+}
+
+.s4 .part_1 span #right {
+  position: relative;
+  top: -3px;
+  left: 10px;
+}
+
+.s4 .part_2 {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 70%;
+  height: 335px;
+  background: #E8E9EA;
+  padding: 78px 68px;
+}
+
+.s4 .part_2 ul li:first-child {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.s4 .part_2 ul li:nth-child(2) {
+  border-bottom: #111 solid 1px;
+  margin: 28px 0;
+  padding-bottom: 15px;
+}
+
+.s4 .part_2 ul li:nth-child(2) img {
+  float: right;
+  margin-top: 5px;
+}
+
+.s4 .part_2 ul li:nth-child(3) img {
+  float: right;
+  margin-top: 5px;
+}
+
+.s5 .s5-container {
+  height: 820px;
+  padding: 128px 157px;
+}
+
+.s5 .s5-container .part_2 {
+  width: 563px;
+  height: 290px;
+  border: #111 solid 1px;
+  padding: 65px;
+}
+
+.s5 .s5-container .part_2 p {
+  margin: 19px 0 32px 0;
+}
+
+.s5 .s5-container .part_2 span {
+  font-size: 16px;
+  line-height: 16px;
+  border-bottom: solid #FF5F00 3px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.s5 .s5-container .part_2 span #right {
+  position: relative;
+  top: -3px;
+  left: 10px;
+}
+
+.s6 {
+  background: #F87200;
+}
+
+.s6 .part_1 {
+  width: 30%;
+  margin: 142px 40px;
+}
+
+.s6 .part_1 h1 {
+  font-size: 36px;
+  line-height: 40px;
+  padding-bottom: 70px;
+}
+
+.s6 .part_1 span {
+  font-size: 16px;
+  line-height: 16px;
+  border-bottom: solid #080808 3px;
+  margin-top: 30px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.s6 .part_1 span #right {
+  position: relative;
+  top: -3px;
+  left: 10px;
+}
+
+.s6 .part_2 {
+  width: 70%;
 }
 
 @media screen and (max-width: 576px) {
   header {
     display: none;
+  }
+  .flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .s1 .s1_container {
     -webkit-box-orient: vertical;
