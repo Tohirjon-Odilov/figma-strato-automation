@@ -299,8 +299,6 @@ header .right li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
 }
 
 main {
@@ -553,7 +551,7 @@ li {
 }
 
 .s5 .s5-container .part_2 {
-  width: 563px;
+  max-width: 563px;
   min-height: 290px;
   border: #111 solid 1px;
   padding: 65px;
@@ -656,7 +654,7 @@ li {
 }
 
 .s7 .s7-container .hr {
-  width: 960px;
+  max-width: 970px;
   height: 1px;
   background: #111;
   position: relative;
@@ -683,7 +681,7 @@ li {
 }
 
 .s8 .s8-container {
-  height: 310px;
+  min-height: 310px;
   padding: 100px 0 30px 0;
 }
 
@@ -741,6 +739,22 @@ li {
   font-size: 13px;
 }
 
+@media screen and (max-width: 992px) {
+  .s8,
+  .s7,
+  .s6,
+  .s5,
+  .s4,
+  .s3,
+  .s2 {
+    display: none;
+  }
+  .s1 .part_1 p {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   header {
     display: none;
@@ -748,6 +762,9 @@ li {
   .flex {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .s1 {
+    margin: 90px 20px 0;
   }
   .s1 .s1_container {
     -webkit-box-orient: vertical;
@@ -757,7 +774,7 @@ li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: -250px;
+    margin-left: -170px;
   }
   .s1 .s1_container .part_1 {
     max-width: 900px;
