@@ -548,13 +548,13 @@ li {
 }
 
 .s5 .s5-container {
-  height: 820px;
+  min-height: 820px;
   padding: 128px 157px;
 }
 
 .s5 .s5-container .part_2 {
   width: 563px;
-  height: 290px;
+  min-height: 290px;
   border: #111 solid 1px;
   padding: 65px;
 }
@@ -609,6 +609,136 @@ li {
 
 .s6 .part_2 {
   width: 70%;
+}
+
+.s6 .part_2 img {
+  width: 100%;
+}
+
+.s7 .s7-container {
+  margin-top: 100px;
+}
+
+.s7 .s7-container .part_1 {
+  width: 65%;
+}
+
+.s7 .s7-container .part_1 .flex .part-1 {
+  width: 50%;
+}
+
+.s7 .s7-container .part_1 .flex .part-1 p {
+  margin-bottom: 10px;
+}
+
+.s7 .s7-container .part_1 .flex .part-1 p a {
+  color: #F87200;
+  text-decoration: none;
+}
+
+.s7 .s7-container .part_1 .flex .part-2 {
+  width: 50%;
+}
+
+.s7 .s7-container .part_1 .flex .part-2 p {
+  margin-bottom: 10px;
+}
+
+.s7 .s7-container .part_1 .flex .part-2 p a {
+  color: #F87200;
+  text-decoration: none;
+}
+
+.s7 .s7-container .part_1 h1 {
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.s7 .s7-container .hr {
+  width: 960px;
+  height: 1px;
+  background: #111;
+  position: relative;
+  top: 280px;
+  left: -40px;
+}
+
+.s7 .s7-container .part_2 {
+  width: 35%;
+  height: 460px;
+  background: #F87200;
+  padding: 32px;
+}
+
+.s7 .s7-container .part_2 img {
+  margin-top: 35px;
+}
+
+.s7 .s7-container .part_2 p {
+  margin-top: 10px;
+  width: 125px;
+  border-bottom: #111 solid 1px;
+  padding-bottom: 20px;
+}
+
+.s8 .s8-container {
+  height: 310px;
+  padding: 100px 0 30px 0;
+}
+
+.s8 .s8-container .part_1 {
+  width: 40%;
+}
+
+.s8 .s8-container .part_1 .box1 p {
+  margin-top: 50px;
+}
+
+.s8 .s8-container .part_1 .box2 {
+  margin-left: 190px;
+}
+
+.s8 .s8-container .part_1 .box2 p {
+  margin-bottom: 20px;
+}
+
+.s8 .s8-container .part_2 {
+  width: 40%;
+}
+
+.s8 .s8-container .part_2 .box1 p {
+  margin-bottom: 20px;
+}
+
+.s8 .s8-container .part_2 .box1 img {
+  margin-right: 20px;
+}
+
+.s8 .s8-container .part_2 .box2 {
+  margin-left: 130px;
+}
+
+.s8 .s8-container .part_2 .box2 .email {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border-bottom: #111 solid 1px;
+  padding-bottom: 10px;
+}
+
+.s8 .s8-container .part_2 .box2 .email img {
+  margin-left: 30px;
+}
+
+.s8 .s8-container .part_2 .box2 #finish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 30px;
+}
+
+.s8 .s8-container .part_2 .box2 #finish p {
+  font-size: 13px;
 }
 
 @media screen and (max-width: 576px) {
